@@ -49,12 +49,18 @@ export class Tab1Page {
 
   async presentAlert() {
     let alert = await this.alertCtrl.create({
-     
+      cssClass: 'my-custom-class',
+      header: 'Error',
+      message: 'Usuario o contraseña incorrectos',
+      buttons: ['Aceptar']
       
-      buttons: ['aceptar']
+      
     });
     alert.present();
   }
+
+
+  
 
 }
 
