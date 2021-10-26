@@ -1,4 +1,4 @@
-<div class="wrapper fadeInDown">
+<div style=background:#1f1a30  class="wrapper fadeInDown">
     
     
     
@@ -6,7 +6,7 @@
       <!-- Tabs Titles -->
       <DIV> 
 
-        <h1 style =color:black>BikerMice</h1>
+        <h1 style =color:black;font-weight:bolder>BikerMice</h1>
 
     </DIV>
   
@@ -15,8 +15,14 @@
       
         <input type="text" id="login" class="fadeIn second" name="login" placeholder="login" [(ngModel)]="usuario">
         <input type="text" id="password" class="fadeIn third" name="login" placeholder="password" [(ngModel)]="contrasena">
-        <button (click)='login()'>Login</button> <br>
-        <button (click)='register()'>Register</button>
+        <ion-button color="primary" shape="round" (click)='login()' >Login</ion-button> <br>
+        <ion-button color="primary" shape="round" (click)='register()' >Register</ion-button> 
+      
+
+        
+
+
+     
       
   
     </div>

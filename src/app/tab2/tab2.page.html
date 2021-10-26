@@ -8,16 +8,14 @@
 
 <ion-content [fullscreen]="true" >
  
-
-
-
   
-  <ul>
 
-      <li *ngFor="let a of array"> {{a.name}}  </li>
-
-
-  </ul>
+  <ion-list>
+    <ion-item *ngFor="let a of array">
+      {{a.name}}
+    </ion-item>
+   
+  </ion-list>
 
 
 </ion-content>
