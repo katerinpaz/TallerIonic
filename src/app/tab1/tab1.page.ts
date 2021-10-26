@@ -39,10 +39,18 @@ export class Tab1Page {
 
   }
 
+
+  register(){
+
+
+    this.navCtrl.navigateRoot(['tabs/tab3']);
+
+  }
+
   async presentAlert() {
     let alert = await this.alertCtrl.create({
      
-  
+      
       buttons: ['aceptar']
     });
     alert.present();

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { EndpointService } from '../service/endpoint.service';
+
 
 @Component({
   selector: 'app-tab2',
@@ -7,6 +9,18 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  array:any;
+
+  constructor(private endpointeervice:EndpointService) {
+
+      this.endpointeervice.getPoint().subscribe(x=>this.array=x.motoratones)
+
+
+
+
+  }
+
+
+
 
 }
