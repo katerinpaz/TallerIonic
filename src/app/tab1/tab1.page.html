@@ -12,18 +12,28 @@
   
     
       <!-- Login Form -->
-      
-        <input type="text" id="login" class="fadeIn second" name="login" placeholder="login" [(ngModel)]="usuario">
-        <input type="text" id="password" class="fadeIn third" name="login" placeholder="password" [(ngModel)]="contrasena">
-        <ion-button color="primary" shape="round" (click)='login()' >Login</ion-button> <br>
-        <ion-button color="primary" shape="round" (click)='register()' >Register</ion-button> 
-      
 
-        
-
-
-     
+        <form>
+          <div class="form-group input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+             </div>
+                <input type="text" id="login" class="fadeIn second" name="login" placeholder="login" [(ngModel)]="usuario">
+            </div> <!-- form-group// -->
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+             </div>
+             <input type="text" id="password" class="fadeIn third" name="login" placeholder="password" [(ngModel)]="contrasena">
+            </div> <!-- form-group// -->
+            <div class="form-group">
+              <ion-button color="primary" shape="round" (click)='login()' >Login</ion-button> <br>
+            </div>
+            <div class="form-group">
+              <ion-button color="primary" shape="round" (click)='register()' >Register</ion-button> 
+            </div>
+          </form>
       
-  
+ 
     </div>
   </div>

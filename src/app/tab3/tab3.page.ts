@@ -16,9 +16,11 @@ export class Tab3Page {
   }
   async presentAlert() {
     let alert = await this.alertCtrl.create({
-     
+      cssClass: 'my-custom-class',
+      message: 'El usuario fue creado satisfactoriamente',
+      buttons: ['Aceptar']
       
-      buttons: ['aceptar']
+  
     });
     alert.present();
   }
